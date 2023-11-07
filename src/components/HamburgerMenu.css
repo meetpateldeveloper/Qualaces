@@ -1,0 +1,48 @@
+/* src/components/HamburgerMenu.css */
+.hamburger-menu {
+  position: relative;
+}
+
+.hamburger-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menu-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.open .hamburger-icon div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .hamburger-icon div:nth-child(2) {
+  opacity: 0;
+}
+
+.open .hamburger-icon div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-icon {
+    display: block;
+  }
+
+  .menu-items {
+    display: none;
+  }
+
+  .open .menu-items {
+    display: block;
+  }
+}

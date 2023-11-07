@@ -1,0 +1,25 @@
+.parallax-container {
+  height: 50vh; /* Adjust to your desired height */
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-background {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5856bc666a49634cd55b0ba9/8156edb1-a0c5-4c62-8eef-be5f3af20902/new-york-city-at-night.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* You can adjust the background properties (e.g., background-size, background-position) to achieve the desired effect. */
+}
+
+.content {
+  padding: 100px;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
